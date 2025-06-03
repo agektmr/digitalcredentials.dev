@@ -10,10 +10,10 @@ Testing with the OWF Reference Wallet
 
 1. Ensure you've completed all of the pre-requisites defined here: [Requirements](/requirements/requirements.md)
 
-2. Download and install the sample wallet app [here](assets/appholder-wallet-debug-v20240906.apk). It will appear in the launcher as `IC Wallet`.
+2. Download and install the sample wallet app [here](https://apps.multipaz.org/). It will appear in the launcher as `Multipaz`.
 
    :::note
-   This is the [Open Wallet Foundation reference wallet](https://github.com/openwallet-foundation-labs/identity-credential/tree/main/wallet) which can also be built directly from source if you prefer.
+   This is the [Open Wallet Foundation reference wallet](https://github.com/openwallet-foundation-labs/identity-credential) which can also be built directly from source if you prefer.
    :::
 
 ```bash
@@ -32,13 +32,15 @@ adb install -t <path-to-apk>
 
 ## Generate a test credential
 
-1. Launch the "IC Wallet" (App Holder) app and provision a new mDL
-2. Tap the menu button and select `Add Self Signed Document`
-3. This document will now be available for presentment to native apps and websites
+1. Launch the "Multipaz" (App Holder) app and provision a new mDL
+2. Tap the `Click to fix` on the home screen
+3. Tap the `Create Test Documents in Platform Secure Area`
+4. Allow Bluetooth access following the instructions
+5. This document will now be available for presentment to native apps and websites
 
 ## Present the credential via the DC API
 
-1. In Chrome on your test device, navigate to https://test.digitalcredentials.dev
+1. In Chrome on your test device, navigate to https://digital-credentials.dev
 
 2. Optionally, customize the request claims
 
